@@ -1,28 +1,25 @@
-// src/app/page.tsx
 import Hero from "@/components/sections/Hero";
+import AboutMe from "@/components/sections/AboutMe"; // 추가
 import TechStack from "@/components/sections/TechStack";
 import ProjectList from "@/components/sections/ProjectList";
 import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-24 pb-24">
-      {/* 1. 히어로 섹션 */}
+    <main className="max-w-6xl mx-auto px-6">
       <Hero />
-
-      {/* 2. 기술 스택 섹션 */}
-      <section id="tech-stack" className="max-w-6xl mx-auto px-4 w-full">
-        <h2 className="text-3xl font-bold mb-12">Technical Skills</h2>
+      <AboutMe /> {/* 추가: 3년 차 경력 및 자격증 강조 */}
+      
+      <section className="py-20">
+        <h2 className="text-3xl font-bold mb-10">Tech Stack</h2>
         <TechStack />
       </section>
 
-      {/* 3. 프로젝트 리스트 섹션 */}
-      <section id="projects" className="max-w-6xl mx-auto px-4 w-full">
-        <h2 className="text-3xl font-bold mb-12">Featured Projects</h2>
+      <section className="py-20">
+        <h2 className="text-3xl font-bold mb-10">Featured Projects</h2>
         <ProjectList />
       </section>
-
-      {/* 4. 컨택 섹션 */}
+      
       <Contact />
     </main>
   );
