@@ -1,6 +1,6 @@
 'use client'; // 클라이언트 컴포넌트로 지정 (애니메이션 사용 필수)
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 export default function AboutMe() {
   const certifications = [
@@ -11,7 +11,7 @@ export default function AboutMe() {
   ];
 
   // 애니메이션 설정 (Slide Up + Fade In)
-  const fadeUpVariant = {
+  const fadeUpVariant: Variants = {
     hidden: { opacity: 0, y: 50 }, // 초기 상태 (투명하고 아래에 있음)
     visible: { 
       opacity: 1, 
