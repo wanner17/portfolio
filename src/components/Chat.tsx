@@ -94,7 +94,7 @@ export default function Chat() {
                     inline-block break-words whitespace-pre-wrap min-w-[40px]
                   `}>
                     {msg.user === '관리자' && (
-                      <span className="text-[10px] font-bold block opacity-80 mb-1">류시정(개발자)</span>
+                      <span className="text-[10px] font-bold block opacity-80 mb-1">관리자</span>
                     )}
                     <p className="text-[13px] leading-relaxed m-0">{msg.text}</p>
                   </div>
