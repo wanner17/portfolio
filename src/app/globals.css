@@ -9,8 +9,8 @@
 
 /* 2. 시스템 설정 대신 'html.dark' 클래스에 반응하도록 수정 */
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #020617; /* 조금 더 깊은 남색 계열 배경 (slate-950) */
+  --foreground: #f8fafc; /* 완전 흰색보다 눈이 편한 slate-50 */
 }
 
 /* 3. 테마 적용 */
