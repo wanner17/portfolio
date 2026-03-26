@@ -1,32 +1,33 @@
-import type { Metadata } from "next";
+'use client';
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { ThemeProvider } from 'next-themes'; // 이미 잘 가져오셨습니다!
+import Chat from "@/components/Chat";
+import { ThemeProvider } from 'next-themes';
+import { usePathname } from 'next/navigation';
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Ryu Sijeong | Web Developer Portfolio",
-  description: "Java, Next.js 기반의 문제 해결 중심 웹 개발자 류시정입니다.",
-};
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  // 관리자 관련 경로일 때는 일반 채팅창을 아예 렌더링하지 않음
+  const isHideChat = pathname?.includes('/admin');
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
   return (
-    <html lang="ko" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased selection:bg-indigo-100`}>
+    <html lang="ko" suppressHydrationWarning>
+      <body className={`${inter.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
-          {/* bg-white dark:bg-slate-950 대신 CSS 변수가 적용된 기본 배경을 사용합니다. */}
           <div className="pt-16 min-h-screen">
             {children}
           </div>
           <Footer />
+          
+          {/* 관리자 페이지가 아닐 때만 유저용 플로팅 버튼 표시 */}
+          {!isHideChat && <Chat />}
+          
         </ThemeProvider>
       </body>
     </html>
