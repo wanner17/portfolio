@@ -8,7 +8,7 @@ export default function Hero() {
           3년 차 Web Developer
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-tight text-slate-900 dark:text-white">
+        <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-tight !text-slate-900 dark:!text-white">
           <span className="transition-colors">
             안정적인 시스템을 설계하는
           </span> 
