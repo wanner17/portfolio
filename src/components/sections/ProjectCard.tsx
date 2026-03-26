@@ -27,7 +27,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           )}
         </div>
 
-        <div className="p-8 space-y-4">
+        <div className="p-8 space-y-4 bg-white dark:bg-slate-900 transition-colors">
           <div className="flex flex-wrap gap-2">
             {project.techStack.map((tech) => (
               <span key={tech} className="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 text-xs font-semibold rounded-full">
@@ -37,18 +37,18 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
           
           {/* 프로젝트 제목 */}
-          <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-50">
+          <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
             {project.title}
           </h3>
 
           {/* 프로젝트 설명 (가장 안 보였을 부분!) */}
-          <p className="text-slate-600 dark:text-slate-400">
+          <p className="text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-2">
             {project.description}
           </p>
 
-          <div className="pt-4 border-t border-slate-50 dark:border-slate-800 flex justify-between items-center">
+          <div className="flex justify-between items-center pt-4 border-t border-slate-100 dark:border-slate-800">
             <span className="text-sm font-bold text-indigo-600 dark:text-indigo-400">자세히 보기 →</span>
-            <span className="text-xs text-slate-400 dark:text-slate-500 font-medium">{project.period}</span>
+            <span className="text-sm text-slate-400 dark:text-slate-500">{project.period}</span>
           </div>
         </div>
       </div>

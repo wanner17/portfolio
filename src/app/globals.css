@@ -1,39 +1,28 @@
 /* src/app/globals.css */
 @import "tailwindcss";
 
-/* 1. 기본 색상 정의 (라이트 모드) */
-:root {
-  --background: #ffffff;
-  --foreground: #111827; /* slate-900: 완전 검정보다 눈이 편함 */
-}
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f172a; /* slate-900: 주간 모드 진한 글자색 */
+  }
 
-/* 2. 'dark' 클래스가 html 태그에 붙었을 때만 다크 모드 적용 (핵심!) */
-.dark {
-  --background: #020617; /* slate-950 */
-  --foreground: #f1f5f9; /* slate-100 */
-}
+  /* .dark 클래스가 있을 때만 야간 모드 적용 */
+  .dark {
+    --background: #020617; /* slate-950: 아주 어두운 배경 */
+    --foreground: #f8fafc; /* slate-50: 야간 모드 밝은 글자색 */
+  }
 
-/* 3. 테일윈드 테마에 변수 연결 (Next.js v13+ 또는 Tailwind v3/v4 환경에 맞게) */
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
+  body {
+    background-color: var(--background) !important;
+    color: var(--foreground) !important;
+    transition: background-color 0.3s, color 0.3s;
+    /* 모바일 브라우저의 강제 색상 반전 방지 */
+    color-scheme: light dark;
+  }
 
-/* 4. Body에 기본 스타일 적용 */
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  transition: background-color 0.3s, color 0.3s;
-  /* 모바일 가독성을 위해 폰트 렌더링 깔끔하게 */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-}
-
-h1, h2, h3, h4, p, span {
-  color: var(--foreground); /* 클래스보다 이 변수 설정이 우선적으로 적용되게 합니다. */
+  /* 모든 텍스트 요소가 변수를 따르도록 강제 */
+  h1, h2, h3, h4, p, span, div {
+    color: inherit;
+  }
 }
