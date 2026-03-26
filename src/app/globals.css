@@ -25,4 +25,20 @@
   h1, h2, h3, h4, p, span, div {
     color: inherit;
   }
+
+  /* globals.css */
+  :root {
+    --heading-color: #0f172a; /* 라이트 모드: slate-900 */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --heading-color: #ffffff; /* 다크 모드: white */
+    }
+  }
+
+  /* 또는 클래스 기반 다크모드를 쓰신다면 */
+  .dark {
+    --heading-color: #ffffff;
+  }
 }

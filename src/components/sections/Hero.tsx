@@ -8,12 +8,13 @@ export default function Hero() {
           3년 차 Web Developer
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-tight !text-slate-900 dark:!text-white">
-          <span className="transition-colors">
+        <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-tight" style={{ color: 'var(--heading-color)' }}>
+          <span className="block transition-colors">
             안정적인 시스템을 설계하는
           </span> 
           <br />
-          <span className="text-indigo-600 dark:text-indigo-400">Java 개발자 류시정</span>입니다.
+          <span className="text-indigo-600 dark:text-indigo-400">Java 개발자 류시정</span>
+          <span>입니다.</span>
         </h1>
 
         <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
