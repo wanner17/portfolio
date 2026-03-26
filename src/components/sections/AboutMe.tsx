@@ -39,7 +39,7 @@ export default function AboutMe() {
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
             eGovFrame 기반의 Java 웹 애플리케이션 개발 및 고도화에 숙련되어 있으며, 
-            산업기술진흥원, 자동차연구원 등 공공·연구기관의 핵심 업무 시스템을 
+            산업기술진흥원, 한국지식재산보호원 등 공공·연구기관의 핵심 업무 시스템을 
             안정적으로 운영해 온 경험이 있습니다.
           </p>
           <p className="text-slate-500">

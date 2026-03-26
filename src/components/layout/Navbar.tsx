@@ -54,13 +54,13 @@ export default function Navbar() {
             {theme === 'dark' ? '☀️' : '🌙'}
           </button>
 
-          <a 
+          {/* <a 
             href="/resume_20260325.pdf" 
             target="_blank"
             className="px-5 py-2.5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-bold rounded-xl hover:bg-indigo-600 dark:hover:bg-indigo-400 transition-all shadow-lg shadow-slate-200 dark:shadow-none"
           >
             Resume
-          </a>
+          </a> */}
         </div>
       </div>
     </motion.nav>
