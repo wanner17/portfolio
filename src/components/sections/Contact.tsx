@@ -11,7 +11,7 @@ export default function Contact() {
           <a href="mailto:wanner17@naver.com" className="text-xl font-semibold text-indigo-600 hover:underline">
             wanner17@naver.com
           </a>
-          <p className="text-sm text-slate-400">GitHub · Blog · LinkedIn</p>
+          <p className="text-sm text-slate-400">GitHub</p>
         </div>
       </div>
     </section>

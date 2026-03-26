@@ -9,7 +9,7 @@ export const PROJECTS: Project[] = [
     featured: true,
     period: "2026.01 ~ 현재",
     description: "테이블 설계부터 기존 사내 화상회의 서버 연계까지 전반적인 개발을 주도한 프로젝트입니다.",
-    techStack: ["Java", "Spring", "BigBlueButton", "MySQL", "Linux"],
+    techStack: ["Java", "eGovFrame", "BigBlueButton", "MySQL", "Linux"],
     thumbnail: "/images/projects/video-platform.png",
     link: "https://www.e-mylang.com",
     troubleshooting: "오픈소스 화상회의 솔루션인 BigBlueButton을 사내 서비스와 안정적으로 연동하기 위해 DB 스키마를 직접 설계하고 아키텍처를 구성했습니다."
@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
     featured: true,
     period: "2025.08 ~ 2025.12",
     description: "교육 콘텐츠 및 학습 운영을 위한 대학 LMS 플랫폼의 핵심 기능을 신규 개발했습니다.",
-    techStack: ["Java", "eGovFrame", "JSP", "Oracle", "MyBatis"],
+    techStack: ["Java", "eGovFrame", "JSP", "Oracle"],
     thumbnail: "/images/projects/lms.png",
     link: "https://www.e-mylearn.com",
     troubleshooting: "사용자와 관리자 모두에게 최적화된 교육 환경을 제공하기 위해 콘텐츠 관리 및 학습 현황 추적 기능을 모듈화하여 구현했습니다."
@@ -40,12 +40,12 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "webinar-server-2024",
-    title: "자사 화상회의(BigBlueButton) 서버 구축",
+    title: "자사 화상회의 서버 구축",
     category: "인프라/구축",
     featured: true,
     period: "2024.07 ~ 2024.10",
-    description: "오픈소스 기반의 웨비나 서버 환경을 구축하고 내부 사이트와 연동했습니다.",
-    techStack: ["BigBlueButton", "Linux", "Apache", "Nginx", "Docker"],
+    description: "오픈소스 기반의 웨비나(BigBlueButton) 서버 환경을 구축하고 내부 사이트와 연동했습니다.",
+    techStack: ["Linux", "Nginx", "Docker", "BigBlueButton"],
     thumbnail: "/images/projects/webinar.png",
     link: "https://webinar.eisoft.co.kr/",
     troubleshooting: "실시간 영상 송출을 위한 최적의 운영 환경을 세팅하고, 내부 서비스와의 원활한 API 연동을 성공시켰습니다."
@@ -119,7 +119,7 @@ export const PROJECTS: Project[] = [
     featured: false,
     period: "2023.11 ~ 2024.02",
     description: "기존 화면 구조 개편 및 레이아웃/콘텐츠 관리 기능 개선.",
-    techStack: ["HTML", "Javascript", "Jquery", "CSS"],
+    techStack: ["JavaScript", "jQuery", "CSS3"],
     thumbnail: "/images/projects/sandbox.png",
     link: "https://sandbox.kiat.or.kr/",
     troubleshooting: "사용자 중심의 UI 개선을 위해 전체적인 레이아웃 구조를 재설계했습니다."
