@@ -36,17 +36,19 @@ export default function ProjectCard({ project }: { project: Project }) {
             ))}
           </div>
           
-          <h3 className="text-2xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 transition-colors">
+          {/* 프로젝트 제목 */}
+          <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-50 group-hover:text-indigo-600 transition-colors">
             {project.title}
           </h3>
-          
+
+          {/* 프로젝트 설명 (가장 안 보였을 부분!) */}
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-2">
             {project.description}
           </p>
 
           <div className="pt-4 border-t border-slate-50 dark:border-slate-800 flex justify-between items-center">
             <span className="text-sm font-bold text-indigo-600 dark:text-indigo-400">자세히 보기 →</span>
-            <span className="text-xs text-slate-400 dark:text-slate-500">{project.period}</span>
+            <span className="text-xs text-slate-400 dark:text-slate-500 font-medium">{project.period}</span>
           </div>
         </div>
       </div>

@@ -1,27 +1,28 @@
 /* src/app/globals.css */
 @import "tailwindcss";
 
-/* 1. 기본 변수 설정 */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a; /* 라이트 모드: 어두운 남색 */
 }
 
-/* 2. 시스템 설정 대신 'html.dark' 클래스에 반응하도록 수정 */
 .dark {
-  --background: #020617; /* 조금 더 깊은 남색 계열 배경 (slate-950) */
-  --foreground: #f8fafc; /* 완전 흰색보다 눈이 편한 slate-50 */
+  --background: #020617; /* 다크 모드 배경: 아주 어두운 남색 */
+  --foreground: #f8fafc; /* 다크 모드 글자: 아주 밝은 회색 (이게 핵심!) */
 }
 
-/* 3. 테마 적용 */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Tailwind v4 방식 */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 }
 
-/* 4. body 스타일 수정: background-color 대신 bg-background 클래스를 사용하기 위해 단순화 */
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  transition: background-color 0.3s, color 0.3s; /* 부드러운 전환 */
+/* 특정 글자 색상이 강제로 지정된 경우 */
+.dark h1 {
+  color: #f8fafc !important; /* 강제로 밝게 만들기 */
 }

@@ -8,12 +8,12 @@ export default function Hero() {
           3년 차 Web Developer
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-black text-slate-900 dark:text-white tracking-tighter leading-tight">
+        <h1 className="text-5xl md:text-7xl font-black text-slate-900 dark:text-white tracking-tighter">
           안정적인 시스템을 설계하는 <br />
-          <span className="text-indigo-600 dark:text-indigo-500">Java 개발자 류시정</span>입니다.
+          <span className="text-indigo-600 dark:text-indigo-400">Java 개발자 류시정</span>입니다.
         </h1>
         
-        <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+        <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
           eGovFrame 기반의 공공기관 고도화 및 신규 구축 프로젝트를 수행하며, 
           <span className="font-bold text-slate-800 dark:text-slate-200"> 10개 이상의 서비스</span>를 안정적으로 런칭하고 운영해 왔습니다. 
           문제 해결을 위한 집요함과 최신 기술에 대한 유연함을 겸비하고 있습니다.
