@@ -29,6 +29,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, p {
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+h1, h2, h3, h4, p, span {
   color: var(--foreground); /* 클래스보다 이 변수 설정이 우선적으로 적용되게 합니다. */
 }
