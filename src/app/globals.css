@@ -26,3 +26,10 @@ body {
 .dark h1 {
   color: #f8fafc !important; /* 강제로 밝게 만들기 */
 }
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) { /* 사용자가 강제로 '라이트'로 고정하지 않았다면 */
+    --background: #020617;
+    --foreground: #f1f5f9;
+  }
+}

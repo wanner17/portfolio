@@ -5,7 +5,7 @@ import Image from "next/image"; // 1. Image 컴포넌트 추가
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link href={`/projects/${project.id}`}>
-      <div className="group bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+      <div className="group bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300">
         
         {/* 이미지 영역 수정 */}
         <div className="aspect-video bg-slate-100 dark:bg-slate-800 relative overflow-hidden">
@@ -37,12 +37,12 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
           
           {/* 프로젝트 제목 */}
-          <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-50 group-hover:text-indigo-600 transition-colors">
+          <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-50">
             {project.title}
           </h3>
 
           {/* 프로젝트 설명 (가장 안 보였을 부분!) */}
-          <p className="text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-2">
+          <p className="text-slate-600 dark:text-slate-400">
             {project.description}
           </p>
 
