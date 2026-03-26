@@ -62,7 +62,7 @@ export default function Chat() {
           <div className="p-4 sm:p-5 bg-indigo-600 text-white font-bold flex justify-between items-center shadow-md">
             <div className="flex items-center gap-3">
               <span className="text-xl">💬</span>
-              <span className="text-base sm:text-lg tracking-tight">실시간 상담</span>
+              <span className="text-base sm:text-lg tracking-tight">실시간 컨택</span>
             </div>
             <button 
               onClick={() => setIsOpen(false)} 
