@@ -24,7 +24,7 @@ export default function Hero() {
         {/* 3. 본문 */}
         <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-4xl leading-relaxed">
           eGovFrame 기반의 공공기관 고도화 및 신규 구축 프로젝트를 수행하며, <br className="hidden md:block" />
-          <span className="font-bold text-slate-900 dark:text-slate-100"> 12개 이상의 서비스</span>를 안정적으로 런칭해 왔습니다.
+          <span className="font-bold text-slate-900 dark:text-slate-100"> 10개 이상의 서비스</span>를 안정적으로 런칭해 왔습니다. 문제 해결을 위한 집요함과 최신 기술에 대한 유연함을 겸비하고 있습니다.
         </p>
 
         {/* 4. 버튼 영역 (z-20으로 클릭 우선순위 확보) */}
