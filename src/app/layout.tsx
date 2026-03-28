@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import Chat from "@/components/Chat";
 import { ThemeProvider } from 'next-themes';
 import { usePathname } from 'next/navigation';
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {!isHideChat && <Chat />}
           
         </ThemeProvider>
+        <Analytics/>
       </body>
     </html>
   );
