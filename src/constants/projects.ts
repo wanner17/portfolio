@@ -11,8 +11,8 @@ export const PROJECTS: Project[] = [
     description: "테이블 설계부터 기존 사내 화상회의 서버 연계까지 전반적인 백엔드 아키텍처를 주도했습니다.",
     techStack: ["Java", "eGovFrame 4.0", "BigBlueButton", "MySQL", "Linux", "Nginx"],
     thumbnail: "/images/projects/video-platform.png",
-    link: "https://www.e-mylang.com",
-    troubleshooting: "오픈소스 BBB와 자사 서비스 간의 API 연동 규격을 표준화하여 시스템 간 데이터 통신의 정밀도를 높였습니다. 특히 연동 과정에서 발생하는 데이터베이스 스키마를 최적화하여, 외부 데이터가 내부 서비스에 안정적으로 반영되도록 설계했습니다."
+    link: "https://www.e-myjob.com",
+    troubleshooting: "오픈소스 화상회의 솔루션인 BigBlueButton을 사내 서비스와 안정적으로 연동하기 위해 DB 스키마를 직접 설계하고 아키텍처를 구성했습니다."
   },
   {
     id: "lms-platform-2025",
