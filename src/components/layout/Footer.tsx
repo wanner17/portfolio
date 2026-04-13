@@ -1,41 +1,40 @@
 export default function Footer() {
   return (
-    // bg-slate-50 -> dark:bg-slate-950, border-t -> dark:border-slate-800 추가
-    <footer className="bg-slate-50 dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800 py-16 transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-        
-        {/* 저작권 표시 */}
-        <div className="text-slate-500 dark:text-slate-400 text-sm font-medium">
-          © 2026 <span className="text-slate-900 dark:text-white font-bold">Ryu Sijeong</span>. All rights reserved.
+    <footer className="border-t border-slate-100 dark:border-slate-800 py-12 transition-colors duration-300">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <span className="text-lg font-black tracking-tight">
+            <span className="text-slate-900 dark:text-white">SI</span>
+            <span className="gradient-text">JEONG</span>
+            <span className="text-slate-400 dark:text-slate-500 font-light">.DEV</span>
+          </span>
+          <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
+            © 2026 Ryu Sijeong. Built with Next.js & Tailwind CSS
+          </p>
         </div>
-        
-        {/* 연락처 및 링크 */}
-        <div className="flex items-center gap-8 text-sm font-bold">
-          {/* 실제 시정님 이메일로 변경 */}
-          <a 
-            href="mailto:wanner17@naver.com" 
-            className="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2"
+
+        <div className="flex items-center gap-3">
+          <a
+            href="mailto:wanner17@naver.com"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all"
           >
-            <span>Email</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+              <rect x="2" y="4" width="20" height="16" rx="2" /><path d="M22 7l-10 7L2 7" />
+            </svg>
+            Email
           </a>
-          
-          {/* 시정님 깃허브 주소로 변경 */}
-          <a 
-            href="https://github.com/wanner17" 
-            target="_blank" 
+          <a
+            href="https://github.com/wanner17"
+            target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all"
           >
-            <span>GitHub</span>
+            <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            GitHub
           </a>
         </div>
-      </div>
-      
-      {/* 하단에 작은 강조 문구 하나 더 (선택사항) */}
-      <div className="max-w-6xl mx-auto px-6 mt-8 pt-8 border-t border-slate-200/50 dark:border-slate-800/50 text-center">
-        <p className="text-xs text-slate-400 dark:text-slate-500">
-          Built with <span className="text-indigo-500">Next.js</span> & <span className="text-indigo-500">Tailwind CSS</span>
-        </p>
       </div>
     </footer>
   );

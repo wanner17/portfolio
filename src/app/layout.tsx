@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 import Chat from "@/components/Chat";
 import { ThemeProvider } from 'next-themes';
 import { usePathname } from 'next/navigation';
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           
           {/* 관리자 페이지가 아닐 때만 유저용 플로팅 버튼 표시 */}
           {!isHideChat && <Chat />}
+          <ScrollToTop />
           
         </ThemeProvider>
         <Analytics/>
