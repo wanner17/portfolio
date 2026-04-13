@@ -18,7 +18,7 @@ export const PERSONAL_PROJECTS: PersonalProject[] = [
     techStack: ["Next.js", "TypeScript", "MediaPipe", "WebSocket", "Docker"],
     github: "https://github.com/wanner17/ai-interview",
     demo: "https://api.eisoft.co.kr:543/interview",
-    period: "2025",
+    period: "2026",
     highlights: [
       "MediaPipe Face Mesh로 시선·표정·입 움직임 실시간 감지",
       "WebSocket 기반 STT 실시간 자막 처리",
@@ -33,7 +33,7 @@ export const PERSONAL_PROJECTS: PersonalProject[] = [
     techStack: ["Next.js", "TypeScript", "Kakao Maps API"],
     github: "https://github.com/wanner17/parking-together",
     demo: "https://parking-together.vercel.app",
-    period: "2025",
+    period: "2026",
     highlights: [
       "카카오맵 SDK 연동으로 현위치 기준 주차장 탐색",
       "사용자 제보 기반 주차 공간 등록 및 공유",
