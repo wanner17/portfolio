@@ -39,7 +39,7 @@ export default function Contact() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-            <a
+            {/* <a
               href="mailto:wanner17@naver.com"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-2xl bg-white text-indigo-700 font-bold hover:bg-indigo-50 hover:scale-[1.03] active:scale-[0.98] transition-all shadow-lg shadow-indigo-900/20"
             >
@@ -48,7 +48,7 @@ export default function Contact() {
                 <path d="M22 7l-10 7L2 7" />
               </svg>
               wanner17@naver.com
-            </a>
+            </a> */}
             <a
               href="https://github.com/wanner17"
               target="_blank"
