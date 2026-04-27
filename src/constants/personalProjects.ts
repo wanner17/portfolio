@@ -17,7 +17,7 @@ export const PERSONAL_PROJECTS: PersonalProject[] = [
       "카메라와 마이크로 실제 면접 환경을 재현하고, AI가 시선·표정·발화를 분석해 면접 역량 리포트를 제공하는 웹 앱입니다.",
     techStack: ["Next.js", "TypeScript", "MediaPipe", "WebSocket", "Docker"],
     github: "https://github.com/wanner17/ai-interview",
-    demo: "https://api.eisoft.co.kr:543/interview",
+    demo: "https://www.in-pass.co.kr",
     period: "2026",
     highlights: [
       "MediaPipe Face Mesh로 시선·표정·입 움직임 실시간 감지",
