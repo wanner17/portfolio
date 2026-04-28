@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-3">
-          {/* <a
+          <a
             href="mailto:wanner17@naver.com"
             className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all"
           >
@@ -22,7 +22,7 @@ export default function Footer() {
               <rect x="2" y="4" width="20" height="16" rx="2" /><path d="M22 7l-10 7L2 7" />
             </svg>
             Email
-          </a> */}
+          </a>
           <a
             href="https://github.com/wanner17"
             target="_blank"
